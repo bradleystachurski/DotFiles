@@ -1,0 +1,19 @@
+# `a` with no arguments opens the current directory in Atom Editor, otherwise
+# opens the given location
+function a() {
+	if [ $# -eq 0 ]; then
+		atom .;
+	else
+		atom "$@";
+	fi;
+}
+
+# `i` with no arguments opens the current directory in Atom Editor, otherwise
+# opens the given location
+function i() {
+	if [ $# -eq 0 ]; then
+		idea .;
+	else
+		idea "$@";
+	fi;
+}
