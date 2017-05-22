@@ -1,3 +1,11 @@
+-- Use oh-my-hammerspoon for Evernote integration
+require("oh-my-hammerspoon")
+
+omh_go({
+  "apps.evernote",
+  "misc.notification_center"
+})
+
 hs.hotkey.alertDuration=0
 hs.hints.showTitleThresh = 0
 hs.window.animationDuration = 0
@@ -324,8 +332,8 @@ end
 if not module_list then
     module_list = {
         "widgets/netspeed",
-        "widgets/hcalendar",
-        "widgets/analogclock",
+        -- "widgets/hcalendar",
+        -- "widgets/analogclock",
         "widgets/aria2",
         "modes/basicmode",
         "modes/indicator",

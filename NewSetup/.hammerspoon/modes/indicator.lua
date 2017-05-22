@@ -37,6 +37,9 @@ function timer_indicator(timelen)
         -- Play a wonderful Pavlovian sound to get us in the Pomodoro mood
         timer_begin_sound:play()
 
+        -- Send keyboard shortcut to toggle DoNotDisturb
+        hs.eventtap.keyStroke({'cmd', 'alt', 'ctrl'}, 'j')
+
         -- Once the wind-up-timer sound finishes, put that groove music on
         hs.timer.doAfter(7.0, function()
           hs.spotify.play()
@@ -62,9 +65,14 @@ function updateused()
         indicator_used=nil
         indicator_left:delete()
         indicator_left=nil
+
+        -- Timer has ended, time for the goodies at the end
         hs.notify.new({title="Time("..totaltime.." mins) is up!", informativeText="Now is "..os.date("%X")}):send()
         timer_end_sound:play()
         hs.spotify.pause()
+
+        -- Send keyboard shortcut to toggle DoNotDisturb
+        hs.eventtap.keyStroke({'cmd', 'alt', 'ctrl'}, 'j')
     else
         left_slice = localMainRes.w - used_slice
         local used_rect = mainScreen:localToAbsolute(hs.geometry.rect(localMainRes.x,localMainRes.h-5,used_slice,5))

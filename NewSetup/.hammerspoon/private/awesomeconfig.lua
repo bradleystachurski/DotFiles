@@ -8,5 +8,5 @@ applist = {
   {shortcut = 'm',appname = 'Messages'},
   {shortcut = 's',appname = 'Spotify'},
   {shortcut = 'k',appname = 'Slack'},
-  {shortcut = 'j',appname = 'IntelliJ IDEA 14'},
+  {shortcut = 'j',appname = 'IntelliJ IDEA'},
 }
