@@ -9,4 +9,5 @@ applist = {
   {shortcut = 's',appname = 'Spotify'},
   {shortcut = 'k',appname = 'Slack'},
   {shortcut = 'j',appname = 'IntelliJ IDEA'},
+  {shortcut = 'l',appname = 'Calendar'},
 }
