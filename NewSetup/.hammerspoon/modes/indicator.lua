@@ -54,7 +54,7 @@ function timer_indicator(timelen)
 end
 
 function updateused()
-    local mainScreen = hs.screen.mainScreen()
+    local mainScreen = hs.screen.primaryScreen()
     local mainRes = mainScreen:fullFrame()
     local localMainRes = mainScreen:absoluteToLocal(mainRes)
     local timeslice = localMainRes.w/(60*totaltime/time_interval)
