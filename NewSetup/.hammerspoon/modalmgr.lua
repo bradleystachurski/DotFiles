@@ -76,10 +76,10 @@ toggleconsole_keys = toggleconsole_keys or {"alt", "Z"}
 if string.len(toggleconsole_keys[2]) > 0 then
     modalmgr:bind(toggleconsole_keys[1], toggleconsole_keys[2], 'Toggle Hammerspoon Console', function() hs.toggleConsole() end)
 end
-winhints_keys = winhints_keys or {"alt", "tab"}
-if string.len(winhints_keys[2]) > 0 then
-    modalmgr:bind(winhints_keys[1], winhints_keys[2], 'Show Windows Hint', function() exit_others() hs.hints.windowHints() end)
-end
+--winhints_keys = winhints_keys or {"alt", "tab"}
+--if string.len(winhints_keys[2]) > 0 then
+--    modalmgr:bind(winhints_keys[1], winhints_keys[2], 'Show Windows Hint', function() exit_others() hs.hints.windowHints() end)
+--end
 
 if modalmgr then
     if launch_modalmgr == nil then launch_modalmgr = true end
