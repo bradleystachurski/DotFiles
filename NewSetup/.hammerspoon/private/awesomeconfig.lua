@@ -12,4 +12,5 @@ applist = {
   {shortcut = 'l',appname = 'Calendar'},
   {shortcut = 'q',appname = 'QuickTime Player'},
   {shortcut = 'p',appname = 'Preview'},
+  {shortcut = 'z',appname = 'Zeplin'},
 }
