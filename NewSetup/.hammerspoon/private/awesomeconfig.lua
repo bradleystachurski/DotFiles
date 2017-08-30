@@ -11,6 +11,7 @@ applist = {
   {shortcut = 'j',appname = 'IntelliJ IDEA'},
   {shortcut = 'l',appname = 'Calendar'},
   {shortcut = 'q',appname = 'QuickTime Player'},
-  {shortcut = 'p',appname = 'Preview'},
+  {shortcut = 'v',appname = 'Preview'},
   {shortcut = 'z',appname = 'Zeplin'},
+  {shortcut = 'p',appname = 'Postman'},
 }
