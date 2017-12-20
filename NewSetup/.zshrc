@@ -53,6 +53,9 @@ ZSH_THEME="nick"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
+# zsh-nvm plugin
+plugins+=(zsh-nvm)
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -87,6 +90,15 @@ source $ZSH/oh-my-zsh.sh
 # include Z
   . `brew --prefix`/etc/profile.d/z.sh
 
+# Including antigen for oh-my-git
+# source "$HOME/.antigen/antigen.zsh"
+#
+# antigen-use oh-my-zsh
+# antigen-bundle arialdomartini/oh-my-git
+# antigen theme arialdomartini/oh-my-git-themes oppa-lana-style
+#
+# antigen-apply
+
 # zsh Aliases
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
@@ -102,7 +114,24 @@ alias dl="cd ~/Downloads"
 alias dp="cd ~/Documents/Programming"
 alias dt="cd ~/Desktop"
 alias p="cd ~/IdeaProjects"
+alias rr="cd ~/Documents/Programming/Radar"
+alias ak="cd ~/Documents/Programming/AktaryTech"
 alias g="git"
 alias h="history"
 alias j="jobs"
 alias f='open -a Finder ./' # f: Opens current directory in MacOS Finder
+alias sc="cd ~/Documents//Stachurski\ Consulting"
+alias sleep="pmset sleepnow"
+alias drmall='docker rm -f $(docker ps -a -q) && docker rmi -f $(docker images -q)'
+
+# Anaconda support
+# added by Anaconda2 4.1.1 installer
+export PATH="/Users/Bradley/anaconda/bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# postgres
+alias pg-start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+alias pg-stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"

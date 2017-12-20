@@ -13,9 +13,13 @@ alias dl="cd ~/Downloads"
 alias dp="cd ~/Documents/Programming"
 alias dt="cd ~/Desktop"
 alias p="cd ~/IdeaProjects"
+alias k="cd ~/Documents/Programming/AktaryTech"
 alias g="git"
 alias h="history"
 alias j="jobs"
+alias f='open -a Finder ./' # f: Opens current directory in MacOS Finder
+alias sc="cd ~/Documents/Programming/Stachurski\ Consulting"
+alias sleep="pmset sleepnow"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`

@@ -12,8 +12,8 @@ function a() {
 # opens the given location
 function i() {
 	if [ $# -eq 0 ]; then
-		idea .;
+    open -a IntelliJ\ IDEA ./
 	else
-		idea "$@";
+    open "$@" IntelliJ\ IDEA ./
 	fi;
 }

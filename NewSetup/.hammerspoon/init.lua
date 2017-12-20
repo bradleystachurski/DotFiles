@@ -386,7 +386,7 @@ function focusNextScreen()
     else
         hs.window.desktop():focus()
         -- In this case also do a click to activate menu bar
-        hs.eventtap.leftClick(hs.mouse.getAbsolutePosition())
+--        hs.eventtap.leftClick(hs.mouse.getAbsolutePosition())
     end
 end
 hs.hotkey.bind({"alt"}, "`", focusNextScreen)

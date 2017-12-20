@@ -14,4 +14,9 @@ applist = {
   {shortcut = 'v',appname = 'Preview'},
   {shortcut = 'z',appname = 'Zeplin'},
   {shortcut = 'p',appname = 'Postman'},
+  {shortcut = 'h',appname = 'Ganache'},
+  {shortcut = 'g',appname = 'Gitter'},
+  {shortcut = 'b',appname = 'Keybase'},
+  {shortcut = 'd',appname = 'Discord'},
+  {shortcut = 'r',appname = 'reMarkable'},
 }

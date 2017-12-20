@@ -16,3 +16,4 @@ if [ -s ~/.nvm/nvm.sh ]; then
 fi
 
 ## End of original settings
+source /usr/local/etc/bash_completion.d/password-store
