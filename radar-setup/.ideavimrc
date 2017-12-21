@@ -1,0 +1,7 @@
+" activate the vim-surround key bindings"
+set surround
+set guicursor=i:ver25-iCursor
+
+" movement maps
+nmap L $
+nmap H ^
